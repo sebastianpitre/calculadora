@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" />
+    <script src="Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <h1>CASIO</h1>
+            <div class="solar"></div>
+            <div class="display">
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
+            </div>
+            <button class="bg-1">MC</button>
+            <button class="bg-1">MR</button>
+            <button class="bg-1">M-</button>
+            <button class="bg-1">M+</button>
+            <button class="bg-1 operador" value="dividir"> <span>÷</span> </button>
+            <button class="bg-1">▶</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="bg-1 operador" value="multiplicar"><span>×</span></button>
+            <button class="col-2" onclick="display.borrar()">&larr;</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="bg-1 operador" value="restar"><span>−</span></button>
+            <button class="col-2" onclick="display.borrarTodo()">C/AC</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="bg-1 doble operador" value="sumar"><span>+</span></button>
+            <button class="numero">0</button>
+            <button class="numero">00</button>
+            <button class="numero">.</button>
+            <button class="bg-1 operador" value="igual"><span>=</span></button>
+        </div>
+    </div>
+</body>
+</html>
